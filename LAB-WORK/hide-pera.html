@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .p{
+            display: block;
+            width: 800px;
+            background-color: blue;
+            color: yellow;
+            font-size: 55px;
+        }
+        button{
+            width: 200px;
+            height: 33px;
+            font-size: 23px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p id="pera" class="p" onclick="change()" ondblclick="reset()">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea nam, quae porro dolor dignissimos rem autem nihil repellendus perspiciatis ipsa nesciunt tenetur enim veniam consectetur neque modi eos incidunt laborum.</p>
+
+    <button onclick="hide()">
+        hide
+    </button>
+    <button onclick="show()">
+        show
+    </button>
+    <button onclick="change()">
+        hide-show 
+    </button>
+
+    <script>
+        function hide()
+        {
+            var x= document.getElementById('pera');
+            x.style.display="none";
+        }
+        function show()
+        {
+            var x= document.getElementById('pera');
+            x.style.display="block";
+        }
+        function change()
+        {
+            var x= document.getElementById('pera');
+                    
+        }
+
+    </script>
+</body>
+</html>
